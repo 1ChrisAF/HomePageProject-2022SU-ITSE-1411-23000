@@ -11,10 +11,13 @@
             padding: 0;
             margin: 0;
         }
+        .shadowed-text {
+            text-shadow: 2px 2px white;
+        }
         body {
             width: 90%;
             margin: 0 auto;
-            background-color: grey;
+            background-color: #c9c9c9;
         }
         header {
             background-color: black;
@@ -79,7 +82,6 @@
             font-size: 4vh;
             font-weight: bold;
             font-style: italic;
-            text-shadow: 1px 1px white;
         }
         #about {
             margin-top: 4vh;
@@ -88,7 +90,11 @@
             font-size: 4vh;
             font-style: italic;
             font-weight: bold;
-            text-shadow: 1px 1px white;
+            padding-top: 1vh;
+        }
+        article p {
+            font-weight: bold;
+            padding: 2vh 0 0 3vh; 
         }
     </style>
     <script>
@@ -116,20 +122,58 @@
     <main>
         <span id="welcome-span">
             <script>
-                document.write('<h3>Hiya, <span id="visitor-name">' + visitorName + '</span>! Thanks for visiting!</h3>');
+                document.write('<h3>Hiya, <span id="visitor-name" class="shadowed-text">' + visitorName + '</span>! Thanks for visiting!</h3>');
             </script>
         </span>
         <div id="about">
-            <h2>About Me</h2>
+            <h2 class="shadowed-text">About Me</h2>
             <article>
-
+                <p>I was born and raised in Augusta, Georgia. I decided I wanted to get out of the state and go places, 
+                    so I joined the US Army after high school back in 2013. The Army sent me all kinds of places, like
+                    Savannah, GA and Hinesville, GA. Despite the Army's clear efforts to take me around the world, after 
+                    my contract was up I still wanted to get out of my home state. My parents had already moved to Dallas,
+                    TX, so I joined them there and started my civilian career in helpdesk work.</p>
+                <p>There truly are few greater joys than only dealing with people who are having a bad day because they
+                    lost their Recycle Bin (again), day in and day out, but for whatever reason this line of work left 
+                    me exhausted and unfulfilled. I decided I wanted to build solutions, not just troubleshoot them, and 
+                    also that I never wanted to talk to another end-user again.</p>
+                <p>My GPA wasn't great by this point so I decided to fix that at Dallas College. I figured I could get a 
+                    degree in software development or programming, and once I completed that, start four-year university for 
+                    computer science, and use my Dallas College degree to find some freelance or intern work while completing
+                    the CS degree. That's...why I'm here.</p>
+                <p>This is my last semester for the Software Programmer/Developer A.A.S. track. Really, by this point I only
+                    needed one credit-hour elective to complete the degree, but I didn't want to just take one class so I've
+                    padded out the semester with classes that aren't directly part of my degree plan, like this one! My hope 
+                    is that some solid JS skills and understanding can help my search for the dev job or internship that will
+                    break me into the field, so that I'm not fighting <em>as</em> hard to land my first dev job after completing
+                    the CS degree. We'll see how that works out.</p>
+                <p>So far I'm loving this kind of work. Everything is a puzzle to be solved, and even the frustrating problems 
+                    can be fun.</p>
+                <p>Along more personal lines, I'm married with one kid, our son Justin. He's just turned one year old. Since
+                    childcare got complicated with COVID, and is still pretty complicated, I'm a stay-at-home dad. My hope is 
+                    to homeschool the boy while doing freelance work to bring in a little extra cash. We'll see how <em>that</em>
+                    works out.</p>
+                <p>Anyways, that's me! Not much more beyond that. For a more thorough treatment of my professional history, there's 
+                    a link to my LinkedIn from my GitHub page, which is itself linked at the top of this page.</p>
+                <p>Thanks for reading. Cheers!</p>
             </article>
         </div>
         <div id="labs">
-            <h2>Lab Links</h2>
-            <nav>
+            <h2 class="shadowed-text">Lab Links</h2>
+            <nav id="lab-nav">
                 <ul>
-
+                    <li>
+                        <a href="#" target="_blank">lab1.html</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">lab2.html</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">project1.html</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">project2.html</a>
+                    </li>
                 </ul>
             </nav>
         </div>
