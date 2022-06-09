@@ -65,7 +65,24 @@
         }
         main {
             clear: both;
-            margin-top: 7vh;
+            
+            margin: 0 auto;
+            width: 95%;
+        }
+        main h3 {
+            font-size: 4vh;
+            font-weight: bold;
+            font-style: italic;
+            padding-left: 10vw;
+        }
+        #visitor-name {
+            font-size: 4vh;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 1px 1px white;
+        }
+        #about {
+            margin-top: 4vh;
         }
         main h2 {
             font-size: 4vh;
@@ -74,6 +91,9 @@
             text-shadow: 1px 1px white;
         }
     </style>
+    <script>
+        var visitorName = prompt("What's your name, stranger?");
+    </script>
 </head>
 <body>
     <header>
@@ -94,6 +114,11 @@
         </nav>
     </header>
     <main>
+        <span id="welcome-span">
+            <script>
+                document.write('<h3>Hiya, <span id="visitor-name">' + visitorName + '</span>! Thanks for visiting!</h3>');
+            </script>
+        </span>
         <div id="about">
             <h2>About Me</h2>
             <article>
@@ -112,5 +137,8 @@
     <footer>
 
     </footer>
+    <script>
+        alert('Happy to have you here, ' + visitorName  + '! Take a look around and make yourself at home.');
+    </script>
 </body>
 </html>
