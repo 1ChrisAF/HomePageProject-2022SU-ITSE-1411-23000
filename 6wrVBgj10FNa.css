@@ -107,6 +107,10 @@ main {
     margin: 0 auto;
     width: 95%;
 }
+#quote p {
+    font-weight: bold;
+    font-style: italic;
+}
 main h3 {
     font-size: 4vh;
     font-weight: bold;
@@ -120,6 +124,9 @@ main h3 {
 }
 #about {
     margin-top: 4vh;
+}
+#quote {
+    margin-top: 8vh
 }
 main h2 {
     font-size: 4vh;
